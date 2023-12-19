@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/gear-ratios
+gear-ratios.so
+gear-ratios.dylib
+gear-ratios.dll
+gear-ratios.a
+gear-ratios.lib
+gear-ratios-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/if-you-give-a-seed-a-fertilizer
+if-you-give-a-seed-a-fertilizer.so
+if-you-give-a-seed-a-fertilizer.dylib
+if-you-give-a-seed-a-fertilizer.dll
+if-you-give-a-seed-a-fertilizer.a
+if-you-give-a-seed-a-fertilizer.lib
+if-you-give-a-seed-a-fertilizer-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

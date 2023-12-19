@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/trebuchet
+trebuchet.so
+trebuchet.dylib
+trebuchet.dll
+trebuchet.a
+trebuchet.lib
+trebuchet-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

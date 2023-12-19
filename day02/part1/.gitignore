@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/cube-conundrum
+cube-conundrum.so
+cube-conundrum.dylib
+cube-conundrum.dll
+cube-conundrum.a
+cube-conundrum.lib
+cube-conundrum-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
