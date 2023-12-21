@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/wait-for-it
+wait-for-it.so
+wait-for-it.dylib
+wait-for-it.dll
+wait-for-it.a
+wait-for-it.lib
+wait-for-it-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
