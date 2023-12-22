@@ -24,7 +24,6 @@ struct Card
     {
         switch(character)
         {
-           
             case '2':
                 this.value = 2;
                 break;
