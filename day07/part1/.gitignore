@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/camel-cards
+camel-cards.so
+camel-cards.dylib
+camel-cards.dll
+camel-cards.a
+camel-cards.lib
+camel-cards-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
