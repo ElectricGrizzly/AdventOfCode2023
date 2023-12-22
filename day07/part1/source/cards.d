@@ -24,9 +24,7 @@ struct Card
     {
         switch(character)
         {
-            case 'J':
-                this.value = 1;
-                break;
+           
             case '2':
                 this.value = 2;
                 break;
@@ -54,14 +52,17 @@ struct Card
             case 'T':
                 this.value = 10;
                 break;
-            case 'Q':
+             case 'J':
                 this.value = 11;
                 break;
-            case 'K':
+            case 'Q':
                 this.value = 12;
                 break;
-            case 'A':
+            case 'K':
                 this.value = 13;
+                break;
+            case 'A':
+                this.value = 14;
                 break;
             default:
                 break;
@@ -74,7 +75,6 @@ struct Hand
     Card[] cards;
     int bid;
     Rank rank;
-    bool jokePresent;
 
     this(Card[] cards, int bid)
     {
@@ -162,10 +162,6 @@ struct Hand
         int[int] cardCounts;
         foreach(Card card; this.cards)
         {   
-            if(card.value == 1)
-            {
-                this.jokerPresent = true;
-            }
             cardCounts[card.value]++;
         }
 
