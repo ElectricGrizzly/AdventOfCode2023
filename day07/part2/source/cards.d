@@ -74,7 +74,7 @@ struct Hand
     Card[] cards;
     int bid;
     Rank rank;
-    int jokerCount;
+    bool hasJoker;
 
     this(Card[] cards, int bid)
     {
@@ -164,13 +164,13 @@ struct Hand
         {   
             if(isJoker(card.value))
             {
-                this.jokerCount++;
+                this.hasJoker = true;
             }
             cardCounts[card.value]++;
         }
 
        
-        return optimizeCardCountsForJokers(cardCounts);
+        return this.hasJoker ? optimizeCardCountsForJokers(cardCounts) : cardCounts;
     }
 
     private bool isJoker(int value)
@@ -180,7 +180,7 @@ struct Hand
 
     private int[int] optimizeCardCountsForJokers(int[int] cardCounts)
     {
-        if(this.jokerCount > 0 && this.jokerCount < 5)
+        if(cardCounts[1] > 0 && cardCounts[1] < 5)
         {
             int largestCount;
             int largestValue;
@@ -201,7 +201,7 @@ struct Hand
                 }
             }
 
-            cardCounts[largestValue] += this.jokerCount;
+            cardCounts[largestValue] += cardCounts[1];
             cardCounts.remove(1);
         }
 

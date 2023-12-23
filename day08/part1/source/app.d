@@ -2,8 +2,8 @@ import std.algorithm : sort;
 import std.stdio : File, readln, write, writeln;
 import std.string;
 
-import parsing : HandParser;
-import cards : Hand;
+import parsing : NodeParser;
+import nodes : Node;
 
 void main()
 {
@@ -22,7 +22,7 @@ void main()
 void printHeader()
 {
     writeln("**** Advent of Code 2023");
-    writeln("**** Day 7: Camel Cards");
+    writeln("**** Day 8: Haunted Wasteland");
 }
 
 string getRunState()
@@ -34,14 +34,6 @@ string getRunState()
 
 void runDay(File input)
 {
-    Hand[] hands = HandParser.getHands(input);
-    sort(hands);
-
-    long sumOfProducts;
-    for(long index = 0; index < hands.length; index++)
-    {
-        sumOfProducts += (index + 1) * hands[index].bid;
-    }
-
-    writeln(sumOfProducts);
+    long count = NodeParser.getStepsCount(input);
+    writeln(count);
 }

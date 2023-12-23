@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/haunted-wasteland
+haunted-wasteland.so
+haunted-wasteland.dylib
+haunted-wasteland.dll
+haunted-wasteland.a
+haunted-wasteland.lib
+haunted-wasteland-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
